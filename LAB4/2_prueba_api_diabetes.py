@@ -6,13 +6,14 @@ df = pd.read_csv("diabetes.csv")
 X_prueba = df.drop("Outcome", axis=1).iloc[:2] # Cogemos los dos primeros pacientes
 
 # 2. Preparamos el paquete de datos en el formato JSON que MLflow espera
+# NUEVO:
 payload = {
-    "inputs": X_prueba.values.tolist()
+    "dataframe_split": X_prueba.to_dict(orient="split")
 }
 
 # 3. Hacemos la petición POST a la API local
 url = "http://localhost:1234/invocations"
-print(f"Enviando datos a la API: {payload['inputs']}")
+print(f"Enviando datos a la API: {payload}")
 
 response = requests.post(url, json=payload)
 
