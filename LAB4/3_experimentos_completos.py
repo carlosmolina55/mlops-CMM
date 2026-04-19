@@ -21,7 +21,7 @@ y = df["Outcome"]
 X_temp, X_test, y_temp, y_test = train_test_split(X, y, test_size = 0.1, random_state=42)
 
 # División a train valid
-X_train, X_val, y_train, y_val = train_test_split(X, y, test_size= 0.2222, random_state=42)
+X_train, X_val, y_train, y_val = train_test_split(X_temp, y_temp, test_size= 0.2222, random_state=42)
 
 print(f"Tamaño Train: {len(X_train)}, Validación: {len(X_val)}, Test: {len(X_test)}")
 
