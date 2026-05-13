@@ -1,0 +1,6 @@
+gradio==4.44.1
+huggingface-hub<0.30.0
+requests
+fastapi==0.109.2
+starlette==0.36.3
+pydantic==2.6.1
