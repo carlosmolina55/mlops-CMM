@@ -1,0 +1,24 @@
+artifact_path: file:///C:/Users/carlo/OneDrive/Documentos/LOYOLA/SEGUNDO CUATRI/MLOPS
+  BI/mlops-CMM/LAB4/mlruns/1/models/m-3b0fd5515ed94d4c9b1b79c8a9f822a2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-3b0fd5515ed94d4c9b1b79c8a9f822a2
+model_size_bytes: 957
+model_uuid: m-3b0fd5515ed94d4c9b1b79c8a9f822a2
+prompts: null
+run_id: 34f8ca12c8064a46b0cd1ab6efb449e1
+utc_time_created: '2026-04-07 09:35:31.874923'
